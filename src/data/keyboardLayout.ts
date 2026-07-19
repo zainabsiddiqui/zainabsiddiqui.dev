@@ -29,7 +29,7 @@ export const row2: KeyConfig[] = [
 ];
 
 export const row3: KeyConfig[] = [
-  { label: 'blog', section: 'blog', variant: 'accent' },
+  { label: 'résumé', section: 'résumé', variant: 'accent' },
   { label: 'a', letter: 'a', variant: 'base' },
   { label: 's', letter: 's', variant: 'base' },
   { label: 'd', letter: 'd', variant: 'base' },
@@ -51,7 +51,7 @@ export const row4: KeyConfig[] = [
 ];
 
 export const row5: KeyConfig[] = [
-  { label: 'space', letter: ' ', variant: 'art', stretch: true },
+  { label: 'blog', section: 'blog', variant: 'art', stretch: true },
 ];
 
 export const keyboardRows: KeyConfig[][] = [row1, row2, row3, row4, row5];

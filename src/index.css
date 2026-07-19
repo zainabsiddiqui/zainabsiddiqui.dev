@@ -1,8 +1,6 @@
 @import "tailwindcss";
 
 @theme {
-  --color-description-text: #B9AFA0;
-
   /* case + board */
   --color-board: #3A342E;
   --color-case-top: #E4DACE;
@@ -30,6 +28,6 @@
 
 @utility shadow-keycap {
   box-shadow:
-    0 3px 0 0 var(--color-keycap-shadow),
+    0 5px 0 0 var(--color-keycap-shadow),
     0 5px 8px rgba(0, 0, 0, 0.25);
 }

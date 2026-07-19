@@ -1,10 +1,12 @@
-import { keyboardRows } from "./keyboardLayout";
+import { keyboardRows } from "../data/keyboardLayout";
 import Key from "./Key";
+import type { Section } from "../types";
 
-export default function Keyboard() {
-    function onSectionChange(section: string) {
-        console.log(`Section: ${section}`);
-    }
+interface KeyboardProps {
+    onSectionChange: (section: Section) => void;
+}
+
+export default function Keyboard({onSectionChange}: KeyboardProps) {
     const mappedRows = keyboardRows.map((row, rowIndex) => (
         <div key={rowIndex} className="flex justify-center gap-1.5 mb-1.5 sm:gap-2 sm:mb-2 lg:gap-3 lg:mb-3">
             {row.map((keyConfig, keyIndex) => (
