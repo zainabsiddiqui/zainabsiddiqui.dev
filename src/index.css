@@ -1,1 +1,35 @@
 @import "tailwindcss";
+
+@theme {
+  --color-description-text: #B9AFA0;
+
+  /* case + board */
+  --color-board: #3A342E;
+  --color-case-top: #E4DACE;
+  --color-case-bottom: #D6C9B8;
+  --color-tray: #C7BAA6;
+
+  /* keycaps */
+  --color-keycap: #F2EDE1;
+  --color-keycap-shadow: #C9C2AE;
+  --color-keycap-text: #8A8272;
+
+  /* accent keys */
+  --color-accent: #E8A5A0;
+  --color-accent-shadow: #C97F79;
+  --color-accent-text: #7A2F2C;
+
+  /* sakura key */
+  --color-sakura: #D97F82;
+  --color-sakura-shadow: #B15C5F;
+
+  /* text on dark background */
+  --color-cream-text: #F2EDE1;
+  --color-muted-text: #B9AFA0;
+}
+
+@utility shadow-keycap {
+  box-shadow:
+    0 3px 0 0 var(--color-keycap-shadow),
+    0 5px 8px rgba(0, 0, 0, 0.25);
+}
