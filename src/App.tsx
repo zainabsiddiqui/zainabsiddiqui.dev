@@ -12,7 +12,7 @@ function App() {
   }
 
   return (
-    <div className="bg-board">
+    <div id="hero" className="bg-board">
       <section className="min-h-screen flex flex-col items-center justify-center gap-8 font-mono">
         <h1 className="text-center text-4xl sm:text-6xl text-cream-text">
           {"zainab siddiqui" }     
@@ -22,7 +22,7 @@ function App() {
         <Keyboard onSectionChange={handleSectionChange}/>
       </section>
 
-      <section id="content" className="pb-16">
+      <section id="content" className="pb-16 scroll-mt-8">
         <TabPanel activeSection={activeSection} onTabClick={handleSectionChange}/>
       </section>
     </div>
